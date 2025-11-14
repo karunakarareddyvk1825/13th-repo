@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather & Coordinates App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- First Container: Weather -->
+  <div class="container">
+    <h1>Weather App</h1><br>
+    <div class="search-box">
+      <label for="cityInputWeather">City Name:</label><br>
+      <input type="text" id="cityInputWeather" placeholder="Enter City"><br><br>
+
+      <label for="latInput">Latitude:</label><br>
+      <input type="text" id="latInput" placeholder="Enter Latitude"><br><br>
+
+      <label for="lonInput">Longitude:</label><br>
+      <input type="text" id="lonInput" placeholder="Enter Longitude"><br><br>
+
+      <button onclick="getWeather()">Search</button>
+    </div>
+    <div id="weatherResult" class="weather-box"></div>
+  </div>
+
+  <!-- Second Container: Get Coordinates -->
+  <div class="container city-container">
+    <h2>Get Lat & Longi</h2><br>
+    <div class="city-box">
+      <label for="cityInput">City Name:</label><br>
+      <input type="text" id="cityInput" placeholder="Enter City Name"><br><br>
+      <button onclick="getCoordinates()">Get Coordinates</button>
+    </div>
+    <div id="cityResult" class="weather-box"></div>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
